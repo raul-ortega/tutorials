@@ -88,11 +88,16 @@ Creamos con el editor preferido un archivo llamado *Dockerfile* con el siguiente
     COPY --from=avida-builder /github.com/fortunalab/avida/cbuild/work/ .
 ```
 
-Compilamos la imagen:
+Compilamos la imagen (tardará unos minutos, paciencia).
 
 ```
 docker build -t avida-build:2.15
 ```
+
+Primero se crea una imagen temporal (que hemos llamado avida-builder) que usa para instalar todas las herrramientas necesaria, clona el repositorio, y compila avida.
+
+En una segunda fase, se crea la imagen final a partir de una imagen ubuntu 20.04 limpia, y copia en ella los archivos ya compilados en la fase anterior, así la imagen resultante (avida-builder:2.15) tiene un tamaño mucho menor, pues no contiene ni los fuentes ni los paquetes instalados para su compilación.
+
 
 ![](img/docker_avida_2.png)
 
@@ -112,5 +117,29 @@ cd /avida
 Y ejecutamos avida:
 
 ```
-./avida
+./avida -version
 ```
+
+El resultado debe ser:
+
+
+    ```
+    Avida 2.15.0
+    --------------------------------------------------------------------------------
+    by Charles Ofria
+    Lead Developer: David M. Bryson
+
+    Active developers include:
+    Aaron P. Wagner and Anya E. Johnson
+    For a more complete list of contributors, see the AUTHORS file.
+
+    Copyright 1999-2014 Michigan State University.
+    Copyright 1993-2003 California Institute of Technology.
+
+    Avida comes with ABSOLUTELY NO WARRANTY.
+    This is free software, and you are welcome to redistribute it under certain
+    conditions. See file COPYING for details.
+
+    For more information, see: http://avida.devosoft.org/
+    --------------------------------------------------------------------------------
+    ```
