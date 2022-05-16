@@ -1,5 +1,3 @@
-## Instalar Ubuntu sobre VirtualBox
-
 1. Descargar e **Instalar Virtual Box**
 
     - https://www.virtualbox.org
@@ -76,7 +74,103 @@
    ![](img/virualbox_docker_15.png)
    
    Presionar **Enter**
+   
+1. Cambiar **Resolución de Pantalla**
 
-1. Abrimos una terminal (CTRL + T)
+   Click botón derecho sobre el escritorio
+   
+   Settings > Display > Resolution
+   
+   Elegir resolución deseada (ejemplo 1280 x 800).
+   
+   ![](img/virualbox_docker_16.png)
+   
+   Clic en **Apply** (Aplicar)
+
+1. Abrimos una **terminal** (CTRL + T)
+
+
+   ![](img/virualbox_docker_17.png)
    
    
+1. **Instalar herramientas**
+
+    Actualizar fuentes
+
+    ```
+    sudo apt-get update
+    ```
+    
+    Instalar paquetes
+    
+    ```
+    sudo apt-get -y install ca-certificates gc g++ cmake make gi curl
+    ```
+    ```
+    sudo apt-get -y install ca-certificates gcc-9 g++-9 cmake=3.16.3-1ubuntu1 make=4.2.1-1.2 git=1:2.25.1-1ubuntu3.4 curl
+    ```
+    
+1.  Clonar repositorio avida
+
+    Crear directorio
+    
+    ```
+    mkdir /home/mi_usuario/github
+    ```
+
+    Saltar al directorio
+    
+    ```
+    cd /home/mi_usuario/github
+    ```
+    
+    Clonar avida
+    
+    ```
+    git clone https://github.com/fortunalab/avida.git
+    ```
+    
+    ![](img/virualbox_docker_18.png)
+    
+    Saltar a directorio avida
+    
+    ```
+    cd avida/
+    ```
+    
+    Actualizar submódulos
+    
+    ```
+    git submodule update --init --recursive
+    ```
+    
+    ![](img/virualbox_docker_19.png)
+    
+1.  **Compilar avida**
+
+    Compilamos avida ejecutando el script build-avida
+    
+    ```
+    ./build_avida
+    ```
+    
+1.  **Ejecutar avida**
+
+    Los archivos finales son creados en cbuild/work
+    
+    ```
+    cd cbuild/work
+    ```
+    
+    Listamos archivos
+    
+    ```
+    ls -l
+    ```
+    
+    Comprobamos número de versión
+    
+    ```
+    ./avida -version
+    ```    
+    
