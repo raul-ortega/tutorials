@@ -1,4 +1,4 @@
-## Instalar Ubunto sobre VirtualBox
+## Instalar Ubuntu sobre VirtualBox
 
 1. Descargar e **Instalar Virtual Box**
 
