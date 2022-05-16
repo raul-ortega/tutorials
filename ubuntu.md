@@ -170,7 +170,7 @@
     Los archivos finales son creados en cbuild/work/bin
     
     ```
-    cd cbuild/work/bin
+    cd work
     ```
     
     Listamos archivos
