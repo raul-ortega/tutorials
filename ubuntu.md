@@ -167,10 +167,10 @@
     
 1.  **Ejecutar avida**
 
-    Los archivos finales son creados en cbuild/work
+    Los archivos finales son creados en cbuild/work/bin
     
     ```
-    cd cbuild/work
+    cd cbuild/work/bin
     ```
     
     Listamos archivos
@@ -179,9 +179,14 @@
     ls -l
     ```
     
+    ![](img/virualbox_docker_20.png)
+    
+    
     Comprobamos número de versión
     
     ```
     ./avida -version
     ```    
+    
+    ![](img/virualbox_docker_21.png)
     
