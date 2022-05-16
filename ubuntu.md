@@ -1,3 +1,5 @@
+# Compilar avida con ubuntu 20.04 en VirtualBox
+
 1. Descargar e **Instalar Virtual Box**
 
     - https://www.virtualbox.org
@@ -105,6 +107,16 @@
     
     ```
     sudo apt-get -y install ca-certificates gcc-9 g++-9 make=4.2.1-1.2 cmake=3.16.3-1ubuntu1  git=1:2.25.1-1ubuntu3.4 curl
+    ```
+    
+    Actualiar alternativas para los compiladores
+        
+    ```
+    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 100 
+    ```
+    
+    ```
+    sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 100 
     ```
     
 1.  Clonar repositorio avida
