@@ -86,7 +86,7 @@ Creamos con el editor preferido un archivo llamado *Dockerfile* con el siguiente
     FROM ubuntu:20.04
     WORKDIR /avida/
     COPY --from=avida-builder /github.com/fortunalab/avida/cbuild/work/ .
-```
+    ```
 
 Compilamos la imagen (tardará unos minutos, paciencia).
 
