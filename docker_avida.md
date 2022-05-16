@@ -9,16 +9,25 @@
 - https://www.youtube.com/watch?v=9awV3Y-rpI0
 
 
-## avida precompilado en una imagen existente
+## avida pre-compilado en una imagen existente
 
 Descargar imagen
 
 ```
-sudo docker pull raulya/avida:2.15
+docker pull raulya/avida:2.15
 ```
+
+Comprobar que se ha descargado:
+
+```
+docker images
+```
+
+![](img/docker_avida_1.png)
 
 Ejecutar el contenedor y abrir sesión
 
 ```
-docker ru -it raulya/avida:2.15 /bin/bash
+docker ru -it raulya/avida:2.15 /bin/sh
 ```
+
