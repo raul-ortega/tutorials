@@ -104,10 +104,7 @@
     Instalar paquetes
     
     ```
-    sudo apt-get -y install ca-certificates gc g++ cmake make gi curl
-    ```
-    ```
-    sudo apt-get -y install ca-certificates gcc-9 g++-9 cmake=3.16.3-1ubuntu1 make=4.2.1-1.2 git=1:2.25.1-1ubuntu3.4 curl
+    sudo apt-get -y install ca-certificates gcc-9 g++-9 make=4.2.1-1.2 cmake=3.16.3-1ubuntu1  git=1:2.25.1-1ubuntu3.4 curl
     ```
     
 1.  Clonar repositorio avida
@@ -153,6 +150,20 @@
     ```
     ./build_avida
     ```
+    
+    El comando anterior puede dar un error debido a que usa 10 hilos para la compilación.
+    Para solucionarlo podemos ejecutar los siguientes comandos
+    
+    ```
+    cd /home/ubuntu/github/avida
+    rm -R cbuild/
+    mkdir -p cbuild
+    cd cbuild
+    cmake ../
+    make
+    make install
+    ```
+    
     
 1.  **Ejecutar avida**
 
