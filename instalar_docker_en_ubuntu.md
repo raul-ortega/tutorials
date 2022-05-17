@@ -2,17 +2,17 @@
 
 1. Ejecutar Ubuntu Software
 
-![](img/docker_ubuntu_1.png)
+   ![](img/docker_ubuntu_1.png)
 
 1. Buscar "docker"
 
-![](img/docker_ubuntu_2.png)
+   ![](img/docker_ubuntu_2.png)
 
 1. Clic en el paquete **docker runtime**
 
 1. Clic en **Instalar**
 
-![](img/docker_ubuntu_3.png)
+   ![](img/docker_ubuntu_3.png)
 
 1. Ejecutar docker como un usuario normal
 
