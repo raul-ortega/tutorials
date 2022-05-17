@@ -65,3 +65,5 @@ Docker por defecto es únicamente accesible con privilegios de root, para poder 
   El resultado debería ser:
   
   ![](img/docker_ubuntu_4.png)
+  
+  Para aprender a ejecutar avida en la imagen [sigue leyendo aquí](docker_avida.md#avida-pre-compilado-en-una-imagen-existente)
