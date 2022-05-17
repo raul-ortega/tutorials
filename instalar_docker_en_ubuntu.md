@@ -1,4 +1,4 @@
-# Instala Docker en Ubuntu
+# Instalar Docker en Ubuntu
 
 1. Ejecutar Ubuntu Software
 
