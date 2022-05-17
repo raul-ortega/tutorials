@@ -4,7 +4,7 @@
 
 **Método 1: Ubuntu Software (snap)**
 
-- [Instalar Docker en ubuntu] (install_docker_in_ubuntu.md)
+- [Instalar Docker en ubuntu](instalar_docker_en_ubuntu.md)
 
 **Método 2: Instalación Manual**
 
