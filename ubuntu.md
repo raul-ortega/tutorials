@@ -1,8 +1,11 @@
 # Compilar avida con ubuntu 20.04 en VirtualBox
 
+**Nota:** 
+
 1. Descargar e **Instalar Virtual Box**
 
     - https://www.virtualbox.org
+    - https://www.youtube.com/watch?v=UfCkZZQ8N4k
 
     ![](img/virualbox_docker_0.png)
 
@@ -179,7 +182,7 @@
     
 1.  **Ejecutar avida**
 
-    Los archivos finales son creados en cbuild/work/bin
+    Los archivos finales son creados en cbuild/work/
     
     ```
     cd work
