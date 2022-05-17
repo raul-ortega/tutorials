@@ -4,11 +4,11 @@
 
    ![](img/docker_ubuntu_1.png)
 
-1. Buscar "docker"
+1. Buscar **docker**
 
    ![](img/docker_ubuntu_2.png)
 
-1. Clic en el paquete **docker runtime**
+1. Clic en el paquete **docker contanier runtime**
 
 1. Clic en **Instalar**
 
