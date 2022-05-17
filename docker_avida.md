@@ -2,6 +2,12 @@
 
 ## Instalar Docker en ubuntu 20.04
 
+**Método 1: Ubuntu Software (snap)**
+
+- [Instalar Docker en ubuntu] (install_docker_in_ubuntu.md)
+
+**Método 2: Instalación Manual**
+
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es
 
 ## Instalar Docker en Windows 10
