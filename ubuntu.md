@@ -4,8 +4,8 @@
 
 1. Descargar e **Instalar Virtual Box**
 
-    - https://www.virtualbox.org
-    - https://www.youtube.com/watch?v=UfCkZZQ8N4k
+    - Sitio Web oficial: https://www.virtualbox.org 
+    - Tutorial de instalación (español): https://www.youtube.com/watch?v=UfCkZZQ8N4k
 
     ![](img/virualbox_docker_0.png)
 
