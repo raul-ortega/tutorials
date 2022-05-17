@@ -1,5 +1,11 @@
 # Instalar Docker en Ubuntu
 
+1. Abrimos una terminal (CTRL + T) y actualizamos las fuentes
+
+   ```
+   sudo apt-get update
+   ```
+
 1. Ejecutar Ubuntu Software
 
    ![](img/docker_ubuntu_1.png)
@@ -13,10 +19,12 @@
 1. Clic en **Instalar**
 
    ![](img/docker_ubuntu_3.png)
+   
+1. Volvemos a la **terminal**
 
-1. Ejecutar docker como un usuario normal
+1. Ejecutar docker como un **usuario normal**
 
-Docker por defecto es únicamente accesible con privilegios de root, para poder usar los comandos como un usaurio normal ejecutar lo siguiente:
+  Docker por defecto es únicamente accesible con privilegios de root, para poder usar los comandos como un usaurio normal ejecutar lo siguiente:
 
   Crear el grupo docker
 
