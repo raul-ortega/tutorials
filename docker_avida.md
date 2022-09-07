@@ -34,7 +34,7 @@ sudo docker images
 Ejecutar el contenedor y abrir sesión
 
 ```
-docker ru -it raulya/avida:2.15 /bin/bash
+docker run -it raulya/avida:2.15 /bin/bash
 ```
 
 Ejecutar avida
